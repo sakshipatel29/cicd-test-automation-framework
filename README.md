@@ -13,6 +13,24 @@ This project simulates a real-world microservices deployment workflow. It includ
 * [Architecture Documentation](docs/architecture.md)
 * [Kubernetes Deployment Guide](k8s/README.md)
 
+## Demo Screenshots
+
+### FastAPI Swagger Documentation
+
+![FastAPI Swagger Docs](docs/screenshots/swagger-docs.png)
+
+### GitHub Actions CI Pipeline
+
+![GitHub Actions Pipeline](docs/screenshots/github-actions.png)
+
+### Dockerized Application Running
+
+![Docker Running](docs/screenshots/docker-running.png)
+
+### Kubernetes Deployment Running
+
+![Kubernetes Running](docs/screenshots/kubernetes-running.png)
+
 ## Tech Stack
 
 * Python
