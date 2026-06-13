@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-test-automation-api
+  labels:
+    app: cicd-test-automation-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cicd-test-automation-api
+  template:
+    metadata:
+      labels:
+        app: cicd-test-automation-api
+    spec:
+      containers:
+        - name: cicd-test-automation-api
+          image: cicd-test-automation-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
