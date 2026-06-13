@@ -16,7 +16,19 @@ spec:
     spec:
       containers:
         - name: cicd-test-automation-api
-          image: cicd-test-automation-api:latest
-          imagePullPolicy: IfNotPresent
+          image: ghcr.io/sakshipatel29/cicd-test-automation-framework:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 20
