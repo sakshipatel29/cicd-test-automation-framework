@@ -2,7 +2,6 @@ from pathlib import Path
 
 import yaml
 
-
 REQUIRED_FILES = [
     "k8s/deployment.yaml",
     "k8s/service.yaml",
