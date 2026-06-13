@@ -1,5 +1,3 @@
-.PHONY: install run test lint format docker-build docker-run k8s-apply k8s-delete
-
 install:
 	python -m pip install --upgrade pip
 	pip install -r requirements.txt
@@ -21,6 +19,12 @@ docker-build:
 
 docker-run:
 	docker run -p 8000:8000 cicd-test-automation-api
+
+compose-up:
+	docker compose up --build
+
+compose-down:
+	docker compose down
 
 k8s-apply:
 	kubectl apply -f k8s/deployment.yaml

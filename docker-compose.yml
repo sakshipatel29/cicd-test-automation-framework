@@ -1,0 +1,9 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cicd-test-automation-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
