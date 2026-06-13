@@ -3,7 +3,7 @@ cat > README.md <<'EOF'
 
 ![CI Pipeline](https://github.com/sakshipatel29/cicd-test-automation-framework/actions/workflows/ci.yml/badge.svg)
 
-A cloud-native CI/CD and test automation project built for a Python FastAPI microservice.  
+A cloud-native CI/CD and test automation project built for a Python FastAPI microservice.
 The project demonstrates automated testing, Docker containerization, Kubernetes deployment, and GitHub Actions-based continuous integration.
 
 ## Project Overview
