@@ -83,6 +83,12 @@ jobs:
           docker stop cicd-test-automation-api
           docker rm cicd-test-automation-api
 
+  publish-image:
+    name: Publish Docker Image
+    runs-on: ubuntu-latest
+    needs: docker-build
+    if: github.ref == 'refs/heads/main'
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
